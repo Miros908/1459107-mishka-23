@@ -1,0 +1,154 @@
+.wrapper{
+ width:280px;
+ margin:0 auto;
+ padding:0 20px;
+
+
+ @media(min-width:@tablet-width){
+  width:668px;
+ }
+ @media(min-width:@desktop-width){
+  width:1050px;
+ }
+}
+
+.wrappers{
+  @media(min-width:@desktop-width){
+    width:1050px;
+    margin:0 auto;
+    display:flex;
+   }
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//fonts
+@OpenSans:"Open Sans",Arial, sans-serif;
+
+
+
+//media
+@tablet-width:708px;
+@desktop-width:1090px;
+
+
+
+//mixin
+
+.font-style(@font-weight;@font-size) {
+  font-weight: @font-weight;
+  font-size: @font-size;
+}
+
+
+//color
+@white:#ffffff;
+@green:#63D1BB;
+@dark-green:#56C3B2;
+@special-black:#444444;
+@black:#000000;
+@special-white:#ECECEC;
+@grey:#f1f1f1;
+@special-grey:#e5e5e5;
+@black-opacity:rgba(0, 0, 0, 0.3);
+
+//button
+.button{
+  border:2px solid @special-black;
+  background-color:inherit;
+  font-family: @OpenSans;
+   .font-style(700,18px);
+   line-height: 20px;
+   color:@special-black;
+   text-transform:uppercase;
+   padding:13px 70px;
+   &:hover{
+    background: linear-gradient(0deg, #444444, #444444);
+    color:@white;
+   }
+
+   &:focus{
+    color:rgba(255, 255, 255, 0.3)
+   }
+}
+
+//head
+.head{
+  font-family: @OpenSans;
+  .font-style(700,25px);
+  line-height: 30px;
+  margin:0;
+  @media(min-width:@tablet-width){
+    .font-style(700,43px);
+    line-height: 50px;
+
+   }
+   @media(min-width:@desktop-width){
+    .font-style(700,53px);
+   }
+}
+
+input{
+ background-color:inherit;
+outline:none;
+ border:none;
+}
+
+fieldset{
+ padding:0;
+ border:none;
+
+}
+
+ul{
+ list-style: none;
+ padding:0;
+ margin:0;
+}
+
+p{
+ margin:0;
+}
+
+//br
+.br-mobile{
+ @media(min-width:@tablet-width){
+  display:none
+ }
+}
+
+.br-tablet{
+ display:none;
+ @media(min-width:@tablet-width){
+  display:block
+ }
+ @media(min-width:@desktop-width){
+  display:none;
+ }
+}
+
+.br-desktop{
+ display:none;
+ @media(min-width:@desktop-width){
+  display:block;
+ }
+}
+
+
+//placeholder
+::-webkit-input-placeholder{
+  color:@black-opacity;
+
+}
