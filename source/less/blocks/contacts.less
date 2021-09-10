@@ -1,0 +1,169 @@
+
+.contacts__cont {
+  font-family: @OpenSans;
+  .font-style(400,14px);
+  line-height: 30px;
+  color: @special-black;
+  margin: 0;
+  margin-right: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-family: @OpenSans;
+    .font-style(400,17px);
+    line-height: 30px;
+  }
+}
+
+.contacts__link {
+  font-family: @OpenSans;
+  .font-style(400,14px);
+  line-height: 30px;
+  color: @special-black;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-family: @OpenSans;
+    .font-style(400,17px);
+    line-height: 30px;
+  }
+}
+
+.contacts {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 98px;
+  }
+}
+
+.contacts__head::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 59px;
+    height: 90px;
+    background-image: url("../img/icon/flag.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 612px;
+    top: -29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -116px;
+    top: -29px;
+  }
+}
+
+.contacts__img {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    height: 457px;
+  }
+}
+
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  margin-top: 63px;
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    margin-top: -397px;
+  }
+}
+
+
+.contacts__wrap {
+  display: flex;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+
+.contacts__wrapper {
+
+  margin-top: 29px;
+  margin-left: 9px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    margin-top: 49px;
+    margin-left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 174px;
+  }
+}
+
+.contacts__link-email {
+  border-bottom: 1px solid @green;
+
+
+  &:hover {
+    color: @green;
+  }
+
+  &:focus {
+    border-bottom: 1px solid  rgba(70, 193, 174, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 49px;
+    margin-left: -10px;
+    height: 31px;
+  }
+}
+
+.contacts__button {
+
+  padding: 13px 49px;
+  margin-top: 38px;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 13px 34px;
+    margin-top: 51px;
+    margin-left: 220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 8px;
+    margin-left: 155px;
+  }
+}
+
+
+.contacts__head {
+  margin-top: 34px;
+  margin-left: 8px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 67px;
+    margin-left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 155px;
+    margin-left: 173px;
+  }
+}
