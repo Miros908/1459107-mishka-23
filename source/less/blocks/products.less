@@ -3,9 +3,9 @@
   .font-style(700,27px);
   line-height: 30px;
   text-align: center;
-  padding-top: 72px;
+  padding-top: 69px;
   padding-bottom: 112px;
-  margin-left: -4px;
+  margin-left: -2px;
   word-break: break-all;
 
   @media (min-width: @tablet-width) {
@@ -72,10 +72,15 @@
     width: 67px;
     height: 100px;
     position: absolute;
-    top: 19px;
-    left: 244px;
+    top: 24px;
+    left: 236px;
     background-image: url("../img/icon/interior.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 27px;
+      left: 258px;
+    }
 
     @media (min-width: @desktop-width) {
       top: 27px;
@@ -85,10 +90,15 @@
 
   span {
     padding: 0;
-    padding-top: 25px;
-    padding-left: 31px;
+    padding-top: 26px;
+    padding-left: 22px;
     display: block;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 27px;
+      padding-left: 39px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -128,15 +138,20 @@
     width: 67px;
     height: 100px;
     position: absolute;
-    top: 19px;
-    left: 244px;
+    top: 24px;
+    left: 224px;
     background-image: url("../img/icon/toy.svg");
     background-repeat: no-repeat;
     text-decoration: none;
 
+    @media (min-width: @tablet-width) {
+      top: 33px;
+      left: 238px;
+    }
+
     @media (min-width: @desktop-width) {
-      top: 27px;
-      left: 444px;
+      top: 29px;
+      left: 427px;
     }
   }
 
@@ -157,8 +172,13 @@
     padding: 0;
     display: block;
     padding-top: 25px;
-    padding-left: 31px;
+    padding-left: 20px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 26px;
+      padding-left: 38px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -222,8 +242,12 @@
     width: 100%;
     height: 8%;
     position: absolute;
-    top: 717px;
+    top: 724px;
     background-size: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icon/zigzag-fill-desktop.svg");
   }
 }
 

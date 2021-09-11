@@ -10,7 +10,7 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const terser = require("gulp-terser");
 const squoosh = require("gulp-libsquoosh");
-const webp = require("gulp-webp");
+const webp = require( "gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 // Styles
@@ -22,6 +22,7 @@ const styles = () => {
         .pipe(less())
         .pipe(postcss([
             autoprefixer(),
+            csso()
         ]))
         .pipe(rename("style.min.css"))
         .pipe(sourcemap.write("."))

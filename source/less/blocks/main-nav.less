@@ -58,16 +58,8 @@
   position: relative;
 }
 
-.header__basket {
-  position: absolute;
-  top: 1px;
-  left: -39px;
-  fill: @black;
-  opacity: 20%;
-}
 
 .main-nav__cont {
-  position: absolute;
   z-index: 100;
   width: 100%;
 
@@ -165,7 +157,6 @@
   }
 }
 
-
 .main-nav__link-tablet {
   @media (min-width: @tablet-width) {
     text-decoration: none;
@@ -180,6 +171,7 @@
     .font-style(700,17px);
   }
 }
+
 
 .main-nav__link {
   text-decoration: none;
@@ -211,5 +203,19 @@
     text-align: center;
     padding: 23px 0;
     background-color: @white;
+  }
+}
+
+
+.main-nav__links {
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+    font-family: @OpenSans;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
   }
 }
