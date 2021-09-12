@@ -182,11 +182,11 @@
   display: block;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: @black-opacity-new;
   }
 
   &:focus {
-    color: rgba(0, 0, 0, 0.3);
+    color: @black-opacity;
   }
 
   &:hover svg {
@@ -199,7 +199,7 @@
   }
 
   @media (max-width: 707px) {
-    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    box-shadow: 0 1px 0 @special-white, inset 0 1px 0 @special-white;
     text-align: center;
     padding: 23px 0;
     background-color: @white;
